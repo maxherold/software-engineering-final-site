@@ -1,0 +1,12 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = maxherold
+	email = maxherold1@gmail.com
+[core]
+	editor = \"C:\\Users\\Owner\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[winUpdater]
+	recentlySeenVersion = 2.25.0.windows.1

@@ -1,0 +1,68 @@
+
+<!--
+  Author:  Max Herold
+  Class:   Software Engineering 
+  Project: Lab 2 / RegExp Tester
+  Description: This is a program to test regular expressions
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Title</title>
+<style>
+body {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-family: Arial, Comic Sans, sans-serif;
+}
+    
+</style>
+</head>
+<body>
+
+<h1>Test Here</h1>
+<p>Input Field 1</p>
+
+<input type="text">
+
+
+<p>Input Field 2</p>
+
+
+<input type="text">
+
+
+<script>
+const str = 'table football';
+
+const regex = RegExp('foo*');
+const globalRegex = RegExp('foo*','g');
+
+console.log(regex.test(str));
+// expected output: true
+
+console.log(regex.test(str));
+// expected output: true
+
+console.log(globalRegex.lastIndex);
+// expected output: 0
+
+console.log(globalRegex.test(str));
+// expected output: true
+
+console.log(globalRegex.lastIndex);
+// expected output: 9
+
+console.log(globalRegex.test(str));
+// expected output: false
+</script>
+
+<button type="button">Answer</button>
+
+<output> type="text">
+
+</body>
+</html>
